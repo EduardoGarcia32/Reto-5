@@ -23,71 +23,71 @@ public class conversiones_numericas {
         String son;
             int repetir = 1;
         
-        System.out.println("** Programa de conversiones para triangulos**");
-        System.out.println("a. Convertir de decimal a binario");
-        System.out.println("b. Convertir de decimal a octal");
-        System.out.println("c. Convertir de decimal a hexadecimal");
-        System.out.println("d. Convertir de binario a decimal");
-        System.out.println("e. Convertir de octal a decimal");
-        System.out.println("f. Convertir de hexadecimal a decimal");
+        System.out.println("Programa de conversiones para triangulos");
+        System.out.println("A. Convertir de decimal a binario");
+        System.out.println("B. Convertir de decimal a octal");
+        System.out.println("C. Convertir de decimal a hexadecimal");
+        System.out.println("D. Convertir de binario a decimal");
+        System.out.println("E. Convertir de octal a decimal");
+        System.out.println("F. Convertir de hexadecimal a decimal");
         
         while(repetir > 0){
-            System.out.print("Tipo de conversion? ");
+            System.out.print("Tipo de conversion ");
             String solicitud = sc.nextLine();
         
         switch(solicitud){
             case "a":
-                System.out.print("Numero a convertir? ");
+                System.out.print("Numero a convertir ");
                 numeroconv = sc.nextInt();
                 sc.nextLine();
                 String binario = Integer.toBinaryString(numeroconv);
-                System.out.println("El numero "+numeroconv+" en base binario es: "+binario);
+                System.out.println("El numero "+numeroconv+" el base binario es: "+binario);
                 break;
                 
             case "b":
-                System.out.print("Numero a convertir? ");
+                System.out.print("Numero a convertir ");
                 numeroconv = sc.nextInt();
                 sc.nextLine();
                 String octal=Integer.toOctalString(numeroconv);
-                System.out.println("El numero "+numeroconv+" en base octal es: "+octal);
+                System.out.println("El numero "+numeroconv+" el base octal es: "+octal);
                 break;
                 
             case "c":
-                System.out.print("Numero a convertir? ");
+                System.out.print("Numero a convertir ");
                 numeroconv = sc.nextInt();
                 sc.nextLine();
                 String hexadecimal=Integer.toHexString(numeroconv);
-                System.out.println("El numero "+numeroconv+" en base hexadecimal es: "+hexadecimal);
+                System.out.println("El numero "+numeroconv+" el base hexadecimal es: "+hexadecimal);
                 break;
                 
             case "d": 
-                System.out.print("Numero a convertir? ");
+                System.out.print("Numero a convertir ");
                 numeroconv2 = sc.nextLine();
                 result = Integer.parseInt(numeroconv2, 2);
-                System.out.println("El numero binario "+numeroconv2+" en decimal es: "+result);
+                System.out.println("El numero binario "+numeroconv2+" el decimal es: "+result);
                 break;
                 
             case "e":
-                System.out.print("Numero a convertir? ");
+                System.out.print("Numero a convertir ");
                 numeroconv2 = sc.nextLine();
                 result = Integer.parseInt(numeroconv2, 8);
-                System.out.println("El numero octal "+numeroconv2+" en decimal es: "+result);
+                System.out.println("El numero octal "+numeroconv2+" el decimal es: "+result);
                 break;
                 
             case "f":
-                System.out.print("Numero a convertir? ");
+                System.out.print("Numero a convertir ");
                 numeroconv2 = sc.nextLine();
                 result = Integer.parseInt(numeroconv2, 16);
-                System.out.println("El numero hexadecimal "+numeroconv2+" en decimal es: "+result);
+                System.out.println("El numero hexadecimal "+numeroconv2+" el decimal es: "+result);
                 break; 
                 
             default:
                 
-                System.out.println("No ingreso de manera correcta los datos, intente nuevamente");
+                System.out.println("No ingreso de forma correcta los datos, intente de nuevo");
                 break;
             }
         
-        System.out.print("Desea Otra conversión (si/no)? ");
+        System.out.print("¿Desea otra conversión (si/no)? ");
         son = leer.nextLine();
         if("si".equals(son)){
             repetir = 1;
